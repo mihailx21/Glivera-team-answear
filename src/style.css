@@ -41,6 +41,9 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+.mobile-menu{
+    display: none;
+}
 .name{
     padding: 40px 0px 10px 205px;
     font-weight: 400;
@@ -459,6 +462,155 @@ a{
     margin-right: 30px;
 }
 
-@media screen and(max-width = 480px) {
-    
+@media only screen and (max-width: 480px) {
+    /* warning styling on mobile version */
+    .black-line{
+        height: 100%;
+        width: 100%;
+        padding: 10px 0;
+    }
+    .mobile-warning{
+        flex-wrap: wrap;
+        flex:2;
+    }
+    .mobile-padding{
+        padding: 0;
+        margin: 0 10px;
+        justify-content: center;
+    }
+    /* navbar menu styling */
+    .navbar{
+      height: 70px;
+      justify-content: flex-start;
+        
+    }
+    .mobile-menu{
+        display: block;
+        font-size: 30px;
+        margin-left: 12px;
+
+    }
+    .name{
+        padding: 0;
+        margin: 24px 24px 24px 43px;
+
+    }
+    .menu{
+        display: none;
+    }
+    .button-login{
+        display: none;
+    }
+    .button-getstarted{
+        margin: auto 10px;
+        padding: 0;
+    }
+    /* styling to news of the day */
+    .news-of-the-day{
+        width: 335px;
+        height: 100%;
+        padding: 0;
+        margin: 30px auto 30px auto;
+        flex-direction: column;
+    }
+    #main-post-img{
+        width: 335px;
+        height: 223px;
+    }
+    .title-of-the-day{
+        padding: 0;
+        margin: 30px 30px 30px 14px;
+    }
+    .info-of-days-news{
+        margin: 0 30px 0 14px;
+    }
+
+    h1{
+        margin: 20px;
+    }
+    .tags{
+        display: none;
+
+    }
+    .container{
+        width: 315px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-container{
+        width: 315px;
+        align-items: center;
+    }
+    .post{
+        flex-direction: column;
+        width: 315px;
+        align-items: center;
+    }
+    .post-main-text{
+        padding: 0 17px 0 17px;
+    }
+    .button-container{
+        height: 100px;
+    }
+    /* aside styling mobile */
+    aside{
+        width: 90%;
+        padding: 0;
+        margin: 10px auto;
+        border: none;
+    }
+    /* plans styling mobile */
+    .plans{
+        height: 100%;;
+    }
+    .plans-title{
+        margin: 60px auto 10px auto;
+        padding: 0 30px 0 30px;
+    }
+    .plans-container{
+        flex-direction: column;
+    }
+    .plan{
+        width: 315px ;
+        height: 340px;
+        margin: 20px auto;
+    }
+    #choosen-default{
+        width: 315px;
+        height: 340px;
+        border: 3px solid #FF8D00;
+    }
+    #choosen-default button{
+        background-color: #FF8D00;
+        color:white;
+    }
+    .ways-to-pay{
+        margin: 0 auto;
+        color: white;
+        flex-direction: row;
+    }
+    .pay-logos-container{
+        margin: 10px;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        align-items: center;
+    }
+    .plan-about-text{
+        margin: 0 15px;
+    }
+    /* footer styling */
+    footer{
+        width: 90%;
+        padding: 0;
+        margin: 20px 20px 0 20px;
+    }
+    .footer-container{
+        width: 100%;
+        padding: 0;
+    }
+    .footer-info-text{
+        flex-direction: column;
+    }
 }
